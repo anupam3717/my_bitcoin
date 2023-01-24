@@ -36,15 +36,16 @@ class Bitcoin {
         symbol: mp["symbol"],
         name: mp["name"],
         image: mp["image"],
-        currentPrice: mp["currentPrice"],
-        marketCap: mp["marketCap"],
+        currentPrice: double.parse(mp["currentPrice"].toString()),
+        marketCap: double.parse(mp["marketCap"].toString()),
         marketCapRank: mp["marketCapRank"],
-        high24: mp["high24"],
-        low24: mp["low24"],
-        priceChange24: mp["priceChange24"],
-        priceChangePercentage24: mp["priceChangePercentage24"],
-        circulatingSupply: mp["circulatingSupply"],
-        ath: mp["ath"],
-        atl: mp["atl"]);
+        high24: double.parse(mp["high24"].toString()),
+        low24: double.parse(mp["low24"].toString()),
+        priceChange24: double.parse(mp["priceChange24"].toString()),
+        priceChangePercentage24:
+            double.parse(mp["priceChangePercentage24"].toString()),
+        circulatingSupply: double.parse(mp["circulatingSupply"].toString()),
+        ath: double.parse(mp["ath"].toString()),
+        atl: double.parse(mp["atl"].toString()));
   }
 }

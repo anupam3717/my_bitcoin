@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class API {
- static Future<List<dynamic>> getMarket() async {
+  static Future<List<dynamic>> getMarket() async {
     Uri address = Uri.parse(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=5&page=1&sparkline=false");
     // ignore: unused_local_variable
